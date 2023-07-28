@@ -1,0 +1,48 @@
+.escolha-uma-cor{
+    margin-top: 100px;
+    justify-content: center;
+}
+
+.escolher-texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.escolher-titulo{
+    font-size: 7vh;
+}
+
+.escolher-paragrafo{
+    margin: 2% 0 5% 0;
+}
+
+.imagem-de-fundo{
+    width: 100%;
+}
+
+.scooter-imagem{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.scooter-imagem img {
+    width: 20em;
+}
+
+/* ESCOLHER UMA COR RESPONSIVO */
+
+@media screen and (max-width: 390px){
+    .escolher-titulo{
+        font-size: 3.5vh;
+    }
+
+    .scooter-imagem{
+        flex-wrap: wrap;
+    }
+
+    .scooter-imagem img {
+        width: 12em;
+    }
+}

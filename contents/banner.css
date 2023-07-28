@@ -1,0 +1,172 @@
+.banner{
+    justify-content: center;
+    display: flex;
+    margin: 0 0 0 30px;
+    align-items: center;
+}
+
+.banner hr {
+    border: 1px solid ;
+    width: 300px;
+}
+
+/* TITULO DO BANNER */
+.banner-texto h1 {
+    font-size: 5em;
+    margin: 1em 0 1em 0;
+    text-transform: uppercase;
+    font-weight: 100;
+    color: var(--cor-primaria);
+    width: 6.5em;
+}
+
+/* LINKS DE COMPRA */
+
+.comprar-botao {
+    margin: 100px 0 0px 0;
+    font-size: 1.5em;
+    padding: 0 30px 0 0;
+    width: 400px;
+}
+
+.comprar-links{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.watch{
+    width: 80px;
+    margin-left: 50px;
+}
+
+.banner-botao{
+    font-size: 40px;
+    text-decoration: none;
+    color: white;
+    background-color: var(--cor-primaria);
+    padding: 10px 18px;
+}
+
+/* IMAGEM DO FUNDO*/
+
+.container-do-fundo{
+    background-color: #C4C4C4;
+    position: relative;
+    background-position-x: right;
+    border-radius: 300px;
+}
+
+.imagem-do-banner{
+    width: 90%;
+}
+
+.banner-imagem{
+    margin-top: 20px;
+}
+
+/* SELETOR */
+
+.seletor{
+    display: flex;
+    padding: 20px 0;
+    gap: 10px;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    margin-right: 5em;
+}
+
+.seletor-setas{
+    font-size: 40px;
+    text-decoration: none;
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 20px 60px;
+    color: var(--cor-primaria);
+}
+
+/* CARACTERÍSTICAS */
+
+.caracteristicas{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    gap: 4%;
+    color: var(--cor-primaria);
+}
+
+.caracteristicas-lista{
+    list-style-type: none;
+    padding: 15px 15px;
+    border-radius: 4px;
+    width: 12vw;
+    box-shadow: 0 0 1px;
+    align-items: flex-end;
+}
+
+.caracteristicas-lista strong{
+    font-size: 25px;
+}
+
+.caracteristicas-container{
+    margin-top: 40px;
+}
+
+/* BANNER RESPONSIVO */
+
+@media screen and (max-width: 390px){
+    .banner{
+        flex-direction: column;
+        font-size: 10px;
+    }
+
+    .comprar-botao {
+        margin: 50px 0 0px 0;
+        font-size: 1.5em;
+        padding: 0 0px 0 0;
+        width: 200px;
+    }
+
+    .comprar-links{
+        font-size: 10px;
+    }
+
+    .banner-botao{
+        font-size: 20px;
+        padding: 5px 8px;
+    }
+
+    .watch{
+        width: 60px;
+        margin-left: 20px;
+    }
+
+    .container-do-fundo{
+        position: relative;
+        background-position-x: center;
+        width: 90%;
+    }
+
+    .seletor{
+        margin-right: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .seletor img {
+        width: 80px;
+    }
+
+    .seletor-setas{
+        font-size: 20px;
+        text-align: center;
+        padding: 10px 20px;
+    }
+
+    .caracteristicas{
+        display: none;
+    }
+    
+}    

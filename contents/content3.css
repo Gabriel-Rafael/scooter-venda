@@ -1,0 +1,125 @@
+.multiple-accessories__titulo{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+/* TITULO DO CONTAINER */
+.multiple-accessories__texto2{
+    margin-top: 3%;
+}
+
+.multiple-accessories__texto, .accessories-container1__titulo{
+    font-size: 7vh;
+}
+
+.accessories-container1__titulo{
+    margin-bottom: 5%;
+}
+
+.accessories-container1{
+    margin-left: 2%;
+    
+}
+
+.multiple-accessories__container{
+    display: flex;
+    align-items: center;
+    margin-top: 5%;
+    gap: 2%;
+}
+
+.lista{
+    list-style-type: none;
+    margin-bottom: 30px;
+}
+
+.lista__content{
+    display: flex;
+    align-items: center;
+}
+
+
+/* ACESSORIOS 2 */
+
+.accessories-container__imagem{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-right: 5%;
+}
+
+/* BOTÃO DE MAIS ACESSORIOS */
+
+.botao-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.botao-more{
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 20px;
+    color: var(--cor-primaria);
+    padding: 25px 70px;
+    border: 2px solid var(--cor-primaria);
+    border-radius: 6px;
+}
+
+/*  CONTENT3 RESPONSIVO */
+
+@media screen and (max-width: 390px){
+    .multiple-accessories__container{
+        gap: 60px;
+    }
+    
+    .multiple-accessories__texto{
+        margin-top: 2%;
+        font-size: 3.5vh;
+        text-align: center;
+    }
+
+    .multiple-accessories__texto2{
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .accessories-container1{
+        width: 250px;
+        margin-left: 20px;
+    }
+
+    .accessories-container1__titulo{
+        margin-top: 2%;
+        font-size: 2vh;
+        text-align: center;
+    }
+
+    .accessories-container2 img{
+        margin-top: 10px;
+        width: 140px;
+    }
+
+    .lista__content img{
+        width: 16px;
+        margin-right: 6px;
+    }
+
+    .lista__content p{
+        font-size: 10px;
+    }
+
+    .accessories-container__imagem{
+        flex-direction: column;
+    }
+
+    .accessories-container__imagem img {
+        width: 100px;
+    }
+
+    .botao-more{
+        padding: 10px 10px;
+        font-size: 12px;
+    }
+}

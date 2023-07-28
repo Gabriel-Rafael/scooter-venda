@@ -1,0 +1,41 @@
+.content2{
+    margin-top: 5%;
+}
+
+.content2-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content2-titulo{
+    font-size: 7vh;
+}
+
+.content2-texto{
+    margin-top: 2%;
+}
+
+.content2-imagem{
+    display: flex;  
+    justify-content: center; 
+}
+
+.content2-imagem img {
+    width: 90%;
+}
+
+/* CONTENT2 RESPONSIVO */
+
+@media screen and (max-width: 390px){
+    .content2-titulo{
+        margin-top: 2%;
+        font-size: 3.5vh;
+        text-align: center;
+    }
+
+    .content2-texto{
+        font-size: 14px;
+        text-align: center;
+    }
+}

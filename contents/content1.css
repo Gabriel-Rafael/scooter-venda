@@ -1,0 +1,51 @@
+.content1{
+    margin-top: 5%;
+}
+
+.content1-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content1-titulo{
+    font-size: 7vh;
+}
+
+.content1-texto{
+    margin-top: 2%;
+}
+
+.content1-imagem{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 2%;
+}
+
+/* CONTENT1 RESPONSIVO */
+
+@media screen and (max-width: 390px){
+    .content1-titulo{
+        margin-top: 2%;
+        font-size: 3.5vh;
+        text-align: center;
+    }
+
+    .content1-texto{
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .scooter-pecas{
+        width: 200px;
+    }
+
+    .features{
+        width: 170px;
+    }
+
+    .content1-imagem img {
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,111 @@
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--fonte-primaria);
+    padding-bottom: 50px;
+}
+
+.cabecalho img{
+    margin: 40px 0 0 30px;
+}
+
+/* MENU DE NAVEGAÇÃO */
+.menu{
+    margin-top: 40px;
+    display: flex;
+    align-items: baseline;
+    gap: 40px;
+} 
+
+.opcoes{
+    justify-content: center;
+    list-style-type: none;
+}
+
+.lista-item{
+    text-align: center;
+    padding: 16px;
+}
+
+.lista-link{
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    text-transform: uppercase;
+}
+
+.conteudo-link, .menu-produtos{
+    text-decoration: none;
+    color: var(--cor-primaria);
+}
+
+.items-opcoes{
+    background-color: var(--cor-primaria);
+    position: absolute;
+    display: none;
+    list-style-type: none;
+    background-clip: text;
+}
+
+.opcoes:hover .items-opcoes{
+    display: block;
+    text-align: center;
+}
+
+/* BOTÃO DE LOGIN */
+
+.login{
+    margin: 40px 40px 0 0;
+}
+
+.login-botao{
+    text-decoration: none;
+    background-color: var(--cor-secundaria);
+    padding: 1em 1.5em ;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: var(--cor-primaria);
+}
+
+.login-botao:hover {
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+
+/* RESPONSIVO PRA TELAS MENORES*/
+
+@media screen and (max-width: 390px){
+    .cabecalho{
+        margin-top: 10px;
+        width: 100%;
+        gap: 10px;
+        padding-bottom: 30px;
+    }
+
+    .menu{
+        margin: 10px 0 0 0;
+    }
+
+    .menu-produtos{
+        font-size: 12px;
+    }
+
+    .conteudo-link{
+        display: none;
+    }
+
+    .cabecalho img{
+        margin: 10px 0 0 10px;
+        width:50px;
+    }
+
+    .login{
+        margin: 10px 10px 0 0;
+    }
+
+    .login-botao{
+        padding: 10px 20px ;
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+}
